@@ -6,11 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
     <script type="module" src="./js/2-form.js" defer></script>
+    <link rel="stylesheet" href="./css/form.css" />
   </head>
   <body>
     <section>
       <a href="./index.html">Go to home</a>
-      <h1>Welcome to page 3</h1>
+      <form class="feedback-form" autocomplete="off">
+        <label>
+          <span class="desc">Email</span>
+          <input class="email" type="email" name="email" autofocus />
+        </label>
+        <label>
+          <span class="desc">Message</span>
+          <textarea class="message" name="message"></textarea>
+        </label>
+        <button type="submit">Submit</button>
+      </form>
     </section>
   </body>
 </html>
