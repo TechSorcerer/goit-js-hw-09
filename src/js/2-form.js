@@ -20,7 +20,7 @@ inputArea.addEventListener('input', event => {
 
 submitBtn.addEventListener('submit', event => {
   event.preventDefault();
-  if (formData.email || formData.message) {
+  if (formData.email && formData.message) {
     console.log(formData);
     localStorage.removeItem('feedback-form-state');
     formData = {
